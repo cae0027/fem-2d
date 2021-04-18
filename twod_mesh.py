@@ -52,7 +52,7 @@ def twod_mesh(x_l,x_r,y_l,y_r,etype,n_nodesx,n_nodesy, *args):
 
 
     # Generate element connectivity
-        e_conn = np.zeros((n_elements, 3));
+        e_conn = np.zeros((n_elements, 3)).astype(int);
         ie     = -1
         for j in range(n_nodesy-1):
             for i in range(n_nodesx-1):
